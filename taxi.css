@@ -29,6 +29,7 @@ font-family: 'Satisfy', cursive;
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
+    background-image: url("paper.gif");
 }
 
 /****************************
@@ -43,7 +44,7 @@ div.navbar {
 }
 
 .logo-img {
-	padding: 8px 0 3px 11px;
+	padding: 10px 0 5px 15px;
 }
 
 /****************************
@@ -83,4 +84,7 @@ div.nav-links {
 *********** Main ************
 ****************************/
 
-
+div.main-head {
+	background: url("images/hyderabad.jpg") #ffffff;
+    width: 100%;
+}
