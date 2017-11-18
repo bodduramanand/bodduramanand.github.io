@@ -7,7 +7,7 @@ html, body, header, div, ul, li, head, h1, h2, h3, h4, h5, h6, p {
 	font: inherit;
 }
 
-/************Fonts*************
+/*****Colors******Fonts********
  ******************************
 font-family: 'Open Sans', sans-serif;
 font-family: 'PT Sans', sans-serif;
@@ -17,6 +17,8 @@ font-family: 'Cabin', sans-serif;
 font-family: 'Work Sans', sans-serif;
 font-family: 'Asap', sans-serif;
 font-family: 'Satisfy', cursive;
+
+  #F7F64F - Yellow
  *******************************
  ******************************/
 
@@ -34,13 +36,51 @@ body {
 ****************************/
 
 div.navbar {
-	display: inline-block;
+	background-color: #F7F64F;
+	overflow: visible;
+    position: fixed;
+    width: 100%;
+}
+
+.logo-img {
+	padding: 8px 0 3px 11px;
 }
 
 /****************************
-*********** Body ************
+*********** Nav *************
 ****************************/
 
-.nav-links {
-	display: inline-block;
+.navbar a {
+	float: left;
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 10 8px 10;
+    text-decoration: none;
+    color: #63635F;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Asap', sans-serif;
 }
+
+div.nav-links {
+    margin-left: 60%;
+}
+
+.nav-link {
+    margin-left: 20px;
+    margin-top: 38px;
+    padding: 2px;
+}
+
+.nav-link:hover {
+    border: 2px solid #63635F;
+    background-color: white;
+}
+
+
+/****************************
+*********** Main ************
+****************************/
+
+
