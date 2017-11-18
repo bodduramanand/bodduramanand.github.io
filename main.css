@@ -1,0 +1,26 @@
+html, body, header, div, ul, li, head, h1, h2, h3, h4, h5, h6, p {
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-size: 100px;
+	font: inherit;
+}
+
+/************Fonts*************
+ ******************************
+font-family: 'Open Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Bitter', serif;
+font-family: 'Cabin', sans-serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Asap', sans-serif;
+font-family: 'Satisfy', cursive;
+ *******************************
+ ******************************/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+}    
