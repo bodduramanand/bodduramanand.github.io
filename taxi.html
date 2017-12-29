@@ -1,37 +1,127 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Taxi Tapp | Online Taxi Booking</title>
+	<title>Yellow Cabs | Online Taxi Booking</title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
-	<link href="https://fonts.googleapis.com/css?family=Asap|Bitter|Cabin|Open+Sans|PT+Sans|Satisfy|Ubuntu|Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="taxi.css">
+	<link href="https://fonts.googleapis.com/css?family=ABeeZee|Alegreya+Sans|Gudea|Julius+Sans+One|Mukta+Malar|Patua+One|Rancho|Roboto|Roboto+Mono|Roboto+Slab|Sanchez|Source+Sans+Pro|Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noticia+Text|Volkhov" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 	<link rel="shortcut icon" href="images/favicon.ico"/>
-	<script src="func.js"></script>
-</head>
+	<script type="text/javascript" src="taxi.js"></script>
+	<script type="text/javascript" src="reset.js"></script>
+	</head>
+
 <body>
 
-<header>
+<header id="home">
 	<div class="navbar">
-		  <a href="#home" class="logo-link"><img src="images/logo.png" alt="logo" height="80" width="175" class="logo-img"></a>
-        <div class="nav-links">
+		<div class="logo">
+		    <a href="#home"><img src="images/logo.png" class="logo-img" alt="logoid" height="80" width="175"></a>
+        </div>
+            <div class="navlinks">
 		      <a href="#home" class="nav-link">Home</a>
-		      <a href="#book" class="nav-link">Book</a>
+		      <a href="#home" class="nav-link">Book</a>
 		      <a href="#features" class="nav-link">Features</a>
 		      <a href="#contact" class="nav-link">Contact</a>
-		</div>      
+		    </div>
+    </div>
+
+    <div class="m-navbar">
+		<div class="m-logo">
+		    <a href="#home"><img src="images/logo.png" class="m-logo-img" alt="logoid" height="80" width="175"></a>
+        </div>
+            <div class="m-navlinks">
+		      <a href="#home" class="m-nav-link">Home</a>
+		      <a href="#home" class="m-nav-link">Book</a>
+		      <a href="#features" class="m-nav-link">Features</a>
+		      <a href="#contact" class="m-nav-link">Contact</a>
+		    </div>
     </div>
 </header>
 
-<div class="main">
-	
+<div class="main" id="home">
 	<div class="main-head">
-		<h1>Book Taxi <br> now in <br><span style="cursor:crosshair">Hyderabad</span><br></h1>
+		<h1>Book-a-Taxi<br>now in<br> <span><strong>Hyderabad</strong></span></h1>
 	</div>
-
+</div>
+<div class="form">
+    <div class="formfields">
+     <br>
+     <input type="text" name="fromlocation" id="fromlocation" placeholder="from location" required id="resetnow">
+     <br>
+     <br>
+     <input type="text" name="tolocation" id="tolocation" placeholder="to location" required id="resetnow">
+     <br>
+     <br>
+     <input type="number" name="kms" id="kms" placeholder="approximate kms" required id="resetnow">
+     <br>
+     <p id="price" id="resetnow"></p>
+     <br>
+     <input type="submit" value="Submit" class="btn1" id="book" onclick="myBook()"> 
+     <input type="button" value="Reset" onClick="myReset()" class="btn2" id="reset">
+    </div>
 
 </div>
 
+<div class="featuremain" id="features">
+		
+    <ul>
+	  <div class="feature">
+		<li class="featureitem">
+			<img src="images/feature1.png" width="110" height="90" alt="featureimage" class="img-circle">
+			<h3 class="side-head">On-Time Pickup</h3>
+		</li>
+      </div>
+
+	  <div class="feature">
+		<li class="featureitem">
+		    <img src="images/feature2.png" width="110" height="90" alt="featureimage" class="img-circle">
+			  <h3 class="side-head">Minimal Pricing</h3>
+		</li>
+	  </div>
+
+	  <div class="feature">
+		<li class="featureitem">
+			<img src="images/feature3.png" width="95" height="90" alt="featureimage" class="img-circle">
+			<h3 class="side-head">Intensive Support</h3>
+		</li>
+	  </div>
+	</ul>
+
+</div>
+
+<div class="contact" id="contact">
+
+   <div class="mainhead4"><h4 class="love">We love to hear from you!</h4></div>
+		<div class="connect">
+			<ul>
+			<li class="address">
+			<p>Yellow Cabs,<br/>
+            SEZ Towers,<br/>
+            Hi-Tech City,<br/>
+            Hyderabad-500081<br/>
+			</p>
+			</li>
+			<li class="social"><p>Like, Follow and Subscribe</p>
+			<a href="#"><img src="images/social1.png" alt="my picture" height="30" width="30" /></a>
+			<a href="#"><img src="images/social2.png" alt="my picture" height="30" width="30" /></a>
+			<a href="#"><img src="images/social3.png" alt="my picture" height="30" width="30" /></a>
+			</li>
+			</ul>
+		</div>	
+	</div>
+	
+</div>
+
+<footer class="copyright">
+	<p>© Copyright 2017 - Yellow Cabs </p>
+</footer>
+
 </body>
+
 </html>
+

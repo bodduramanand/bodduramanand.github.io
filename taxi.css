@@ -3,88 +3,706 @@ html, body, header, div, ul, li, head, h1, h2, h3, h4, h5, h6, p {
 	padding: 0;
 	margin: 0;
 	border: 0;
-	font-size: 100px;
+	font-size: 100%;
 	font: inherit;
 }
 
-/*****Colors******Fonts********
- ******************************
-font-family: 'Open Sans', sans-serif;
-font-family: 'PT Sans', sans-serif;
+/*******************************
+ **************Fonts*************
+font-family: 'Roboto', sans-serif;
+font-family: 'Mukta Malar', sans-serif;
+font-family: 'Alegreya Sans', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Slab', serif;
 font-family: 'Ubuntu', sans-serif;
-font-family: 'Bitter', serif;
-font-family: 'Cabin', sans-serif;
-font-family: 'Work Sans', sans-serif;
-font-family: 'Asap', sans-serif;
-font-family: 'Satisfy', cursive;
-
-  #F7F64F - Yellow
- *******************************
+font-family: 'Patua One', cursive;
+font-family: 'Sanchez', serif;
+font-family: 'ABeeZee', sans-serif;
+font-family: 'Gudea', sans-serif;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Rancho', cursive;
+font-family: 'Noto Sans', sans-serif;
  ******************************/
 
-/**********************
-******** Body *********
-**********************/
+
+/*******************************
+ ************Body*************
+ ******************************/
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
-    background-image: url("paper.gif");
+    font-family: 'Mukta Malar', sans-serif;
+    background: #ffffff;
 }
 
-/****************************
-*********** Logo ************
-****************************/
+/*******************************
+ ********Logo + NavBar**********
+ ******************************/
 
-div.navbar {
-	background-color: #F7F64F;
+.navbar {
+	display: inline-block;
+	position: relative;
 	overflow: visible;
-    position: fixed;
-    width: 100%;
+	width: 100%;
 }
 
-.logo-img {
-	padding: 10px 0 5px 15px;
+.m-navbar {
+	display: none;
 }
 
-/****************************
-*********** Nav *************
-****************************/
+div.logo {
+	padding: 8px 0 0 15px;
+}
 
-.navbar a {
+div.navlinks {
+	display: inline-block;
 	float: left;
-    display: inline-block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 8px 10 8px 10;
-    text-decoration: none;
-    color: #63635F;
-    font-weight: bolder;
-    font-size: 20px;
-    font-family: 'Asap', sans-serif;
-}
-
-div.nav-links {
-    margin-left: 60%;
+	margin-left: 65%;
+	margin-top: -3.6em;
 }
 
 .nav-link {
-    margin-left: 20px;
-    margin-top: 38px;
-    padding: 2px;
+	display: inline-block;
+	margin-left: 4px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+	border-right: 1px solid #000;
+	padding-right: 6px;
+	font-size: 1.015em;
 }
 
-.nav-link:hover {
-    border: 2px solid #63635F;
-    background-color: white;
+.nav-link:last-child {
+    border: none;
+}
+
+/*******************************
+ ************Head*************
+ ******************************/
+
+.main {
+	background: url("images/bgimg2.png");
+	margin: 1px;
+	padding: 5%;
+}
+
+.main-head h1 {
+	font-size: 2em;
+	text-align: center;
+}
+
+span {
+    transition: text-shadow 0.5s;
+}
+
+span:hover {
+	text-shadow: 0 0 15px #ffffff;
+}
+
+/*******************************
+ ************Book*************
+ ******************************/
+
+.form {
+  margin-top: 0px;
+  margin-bottom: 6px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.formfields {
+	text-align: center;
+}
+
+input {
+	padding: 10px;
+	box-shadow: 1px 1px 1px #C7C7C7 inset;
+}
+
+#price {
+	font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: normal;
+	padding: 1em 0 0 0;
+}
+
+.btn1 {
+	border-radius: 25px 0 0 25px;
+	font-size: 22px;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: url("images/bgimg2.png");
+	padding: 8px 2em 8px 3em;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 18px;
+	
+	transition: color 2s;
+	transition: background 0.8s;
+}
+
+.btn2 {
+	border-radius: 0px 25px 25px 0px;
+	font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+	background: url("images/bgimg2.png");
+	padding: 8px 12px 8px 10px;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 18px;
+	transition: color 2s;
+	transition: background 0.8s;
+}
+
+.btn1:hover {
+	color: #ffffff;
+	background: url("images/bgimg3.png");
+}
+
+.btn2:hover {
+	color: #ffffff;
+	background: url("images/bgimg3.png");
+}
+
+/*******************************
+ **********Features*************
+ ******************************/
+
+.featuremain {
+ 	display: inline-block;
+ 	width: 100%;
+ 	position: relative;
+ 	padding: 40px 0px 40px 0px;
+ 	background: url("images/bgimg3.png");
+ }
+
+ ul {
+  list-style-type: none;
+}
+
+div.feature {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 10px;
+    border-right: 0.5px solid #ffffff;
+    width: 32.5%;
+}
+
+.feature:last-child {
+    border: none;
+}
+
+.featureitem:last-child {
+	margin-left: -20px;
+}
+
+h3.side-head {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Julius Sans One', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: -18px;
+}
+
+/*******************************
+ **********Contact*************
+ ******************************/
+
+div.contact {
+	background: #ffffff;
+	padding: 2em 0 10px 4.5em;
+	width: 80%;
+}
+
+h4.love {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.address p {
+	padding-bottom: 10px;
+}
+
+.social {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 0 15px 0;
+	border-top: 1px solid #000;
+}
+
+li.social img {
+	padding-top: 6px;
+	padding-right: 3px;
+	padding-bottom: 5px;
+	transition: transform 0.4s;
+}
+
+li.social img:hover {
+	transform: rotate(360deg);
+}
+
+/*******************************
+ **********Footer*************
+ ******************************/
+
+ footer {
+ 	background: url("images/bgimg3.png");
+ 	color: #ffffff;
+ 	padding: 5px 0 5px 0;
+ 	text-align: center;
+ }
+
+ /*******************************
+ ********************************
+ *******************************/
+
+
+
+
+
+
+/*******************************
+ ********Mobile version*********
+ ******************************/
+
+ @media all and (min-width: 1024px) and (max-width: 1280px) { 
+ 
+ 
+
+ }
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+ 
+ 
+
+ }
+
+ /*******************************
+ min-width:480px/max-width:768px
+ ******************************/
+
+ @media all and (min-width: 480px) and (max-width: 768px) {
+
+body {
+    font-style: normal;
+    font-family: 'Mukta Malar', sans-serif;
+    background: #ffffff;
+}
+
+/*******************************
+ ********Logo + NavBar**********
+ ******************************/
+
+.navbar {
+	display: inline-block;
+	position: relative;
+	overflow: visible;
+	width: 100%;
 }
 
 
-/****************************
-*********** Main ************
-****************************/
+div.logo {
+	padding: 8px 0 0 15px;
+}
 
-div.main-head {
-	background: url("images/hyderabad.jpg") #ffffff;
+div.navlinks {
+	display: inline-block;
+	float: left;
+	margin-left: 65%;
+	margin-top: -3.6em;
+}
+
+.nav-link {
+	display: inline-block;
+	margin-left: 4px;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+	border-right: 1px solid #000;
+	padding-right: 6px;
+	font-size: 1.015em;
+}
+
+.nav-link:last-child {
+    border: none;
+}
+
+/*******************************
+ ************Head*************
+ ******************************/
+
+.main {
+	background: url("images/bgimg2.png");
+	margin: 1px;
+	padding: 6%;
+}
+
+.main-head h1 {
+	font-size: 2em;
+	text-align: center;
+}
+
+span {
+    transition: text-shadow 0.5s;
+}
+
+span:hover {
+	text-shadow: 0 0 15px #ffffff;
+}
+
+/*******************************
+ ************Book*************
+ ******************************/
+
+form {
+  margin-top: 15px;
+  margin-bottom: 6px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.formfields input {
+	padding: 10px;
+	box-shadow: 1px 1px 1px #C7C7C7 inset;
+}
+
+.btn1 {
+	border-radius: 25px 0 0 25px;
+	font-size: 22px;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: url("images/bgimg2.png");
+	padding: 8px 2.5em 8px 3em;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 18px;
+	
+	transition: color 2s;
+	transition: background 0.8s;
+}
+
+.btn2 {
+	border-radius: 0px 25px 25px 0px;
+	font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+	background: url("images/bgimg2.png");
+	padding: 8px 12px 8px 10px;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 18px;
+	
+	transition: color 2s;
+	transition: background 0.8s;
+}
+
+.btn1:hover {
+	color: #ffffff;
+	background: url("images/bgimg3.png");
+}
+
+.btn2:hover {
+	color: #ffffff;
+	background: url("images/bgimg3.png");
+}
+
+/*******************************
+ **********Features*************
+ ******************************/
+
+.featuremain {
+ 	display: inline-block;
+ 	width: 100%;
+ 	position: relative;
+ 	padding: 40px 0px 40px 0px;
+ 	background: url("images/bgimg3.png");
+ }
+
+ ul {
+  list-style-type: none;
+}
+
+div.feature {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 10px;
+    border-right: 0.5px solid #ffffff;
+    width: 32.5%;
+}
+
+.feature:last-child {
+    border: none;
+}
+
+.featureitem:last-child {
+	margin-left: -20px;
+}
+
+h3.side-head {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Julius Sans One', sans-serif;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: -18px;
+}
+
+/*******************************
+ **********Contact*************
+ ******************************/
+
+div.contact {
+	background: #ffffff;
+	padding: 2em 0 10px 4.5em;
+	width: 80%;
+}
+
+h4.love {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.address p {
+	padding-bottom: 10px;
+}
+
+.social {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 0 15px 0;
+	border-top: 1px solid #000;
+}
+
+li.social img {
+	padding-top: 6px;
+	padding-right: 3px;
+	padding-bottom: 5px;
+	transition: transform 0.4s;
+}
+
+li.social img:hover {
+	transform: rotate(360deg);
+}
+
+/*******************************
+ **********Footer*************
+ ******************************/
+
+ footer {
+ 	background: url("images/bgimg3.png");
+ 	color: #ffffff;
+ 	padding: 5px 0 5px 0;
+ 	text-align: center;
+ }
+
+ } 
+
+ /*******************************
+ *******max-width: 480px********
+ ******************************/
+
+@media all and (max-width: 480px) {
+
+body {
+    font-style: normal;
+    font-family: 'Mukta Malar', sans-serif;
+    background: #ffffff;
     width: 100%;
 }
+
+/*******************************
+ ********Logo + NavBar**********
+ ******************************/
+
+div.navbar {
+	display: none;
+
+}
+
+div.m-navlinks {
+    display: inline-block;
+}
+
+.m-logo-img {
+    display:block;
+    margin: 0 auto;
+    width: 55%;
+    position: relative;
+    padding: 10px 0 10px 0;
+}
+
+.m-navlinks {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0  0;
+    width: 100%;
+    line-height: 1;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.m-navlinks a {
+    padding: .25em;
+    text-decoration: none;
+    height: 1em;
+    font-size: 1em;
+    font-weight: bold;  
+    color: #000;
+}
+
+/*******************************
+ ************Head*************
+ ******************************/
+
+.main {
+	background: url("images/bgimg2.png");
+	margin: 1px;
+	padding: 2em;
+}
+
+.main-head h1 {
+	font-size: 2em;
+	text-align: center;
+}
+
+span {
+    transition: text-shadow 0.5s;
+}
+
+span:hover {
+	text-shadow: 0 0 15px #ffffff;
+}
+
+/*******************************
+ ************Book*************
+ ******************************/
+
+form {
+  margin-top: 15px;
+  margin-bottom: 0.2em;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  border-bottom: 1px solid #000;
+}
+
+.formfields input {
+	padding: 10px;
+	box-shadow: 1px 1px 1px #C7C7C7 inset;
+}
+
+.btn1 {
+	border-radius: 1em 0 0 1em;
+	font-size: 22px;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: url("images/bgimg2.png");
+	padding: 8px 2.5em 2px 3em;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 18px;
+	
+	transition: color 2s;
+	transition: background 0.8s;
+}
+
+.btn2 {
+	border-radius: 0px 1em 1em 0px;
+	font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+	background: url("images/bgimg2.png");
+	padding: 8px 10px 2px 10px;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 18px;
+	transition: color 2s;
+	transition: background 0.8s;
+}
+
+.btn1:hover {
+	color: #ffffff;
+	background: url("images/bgimg3.png");
+}
+
+.btn2:hover {
+	color: #ffffff;
+	background: url("images/bgimg3.png");
+}
+
+/*******************************
+ **********Features*************
+ ******************************/
+
+.featuremain {
+ 	display: none;
+ 	border-bottom: 1px solid #000;
+ }
+
+
+
+ 
+
+/*******************************
+ **********Contact*************
+ ******************************/
+
+div.contact {
+	background: #ffffff;
+	padding: 2em 0 10px 2em;
+	width: 80%;
+}
+
+h4.love {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.address p {
+	padding-bottom: 10px;
+}
+
+.social {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 0 15px 0;
+	border-top: 1px solid #000;
+}
+
+li.social img {
+	padding-top: 6px;
+	padding-right: 3px;
+	padding-bottom: 5px;
+	transition: transform 0.4s;
+}
+
+li.social img:hover {
+	transform: rotate(360deg);
+}
+
+/*******************************
+ **********Footer*************
+ ******************************/
+
+ footer {
+ 	background: url("images/bgimg3.png");
+ 	color: #ffffff;
+ 	padding: 5px 0 5px 0;
+ 	text-align: center;
+ }
+
+}
+
+ /*******************************
+ ********************************
+ *******************************/
