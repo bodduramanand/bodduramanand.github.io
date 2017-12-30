@@ -2,10 +2,10 @@
 
 function myBook() {
     var iKms = document.getElementById('kms');
-
     var newKms = iKms.value;
-
     var disPrice = document.getElementById('price');
+
+    
  
         if (newKms >= 0 && newKms <= 4) {
             var newPrice = 40;
@@ -31,18 +31,19 @@ function myBook() {
             var newPrice = 18 * iKms.value;
         }
 
-        else if (newKms >= 41) {
-            var noPrice = disPrice.innerHTML("Your location is out of our range, sorry!");
-        }
+        var newFrom = document.getElementById('fromlocation').value;
+          var newTo = document.getElementById('tolocation').value;  
+        disPrice.innerHTML = "Your approximate fare from "+ newFrom + " to "+ newTo +" is Rs. " + newPrice;
 
         else {
-            var nodefined = disPrice.innerHTML("Please enter valid information!");
+            var noPrice = document.getElementById('noprice');
+            var nullPrice = "You are out of our range, sorry!";
+            noPrice.innerHTML = nullPrice;
         }
 
 
-          var newFrom = document.getElementById('fromlocation').value;
-    var newTo = document.getElementById('tolocation').value;
-disPrice.innerHTML = "Your approximate fare from "+ newFrom + " to "+ newTo +" is Rs. " + newPrice;
+          
+
  }  
 
 
