@@ -142,7 +142,7 @@ input.form2 {
 	padding: 8px 2em 8px 3em;
 	color: #000;
 	text-align: center;
-	font-weight: bold;
+	font-weight: normal;
 	margin-bottom: 18px;
 	
 	transition: color 2s;
@@ -157,7 +157,7 @@ input.form2 {
 	padding: 8px 12px 8px 10px;
 	color: #000;
 	text-align: center;
-	font-weight: bold;
+	font-weight: normal;
 	margin-bottom: 18px;
 	transition: color 2s;
 	transition: background 0.8s;
@@ -218,7 +218,7 @@ h3.side-head {
 }
 
 /*******************************
- **********Contact*************
+ ***Contact and Newsletter****
  ******************************/
 
 div.contact {
@@ -235,19 +235,33 @@ h4 {
 	font-weight: bold;
 }
 
-.address p {
-	padding-bottom: 10px;
-}
-
-div.addressnow {
-	border-right: 1px;
-
-}
-
 input.form2 {
 	padding: 2px 2px 2px 8px;
-	border-radius: 12.5px;
+	border-radius: 25px;
 	box-shadow: 1px 1px 1px #C7C7C7 inset;
+}
+
+.btn3 {
+	border-radius: 25px;
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: url("images/bgimg2.png");
+	padding: 8px 2em 8px 2em;
+	color: #000;
+	text-align: center;
+	font-weight: normal;
+	margin-bottom: 18px;
+	transition: color 2s;
+	transition: background 0.8s;
+}
+
+.btn3:hover {
+	color: #ffffff;
+	background: url("images/bgimg3.png");
+}
+
+.address p {
+	padding-bottom: 10px;
 }
 
 .social {

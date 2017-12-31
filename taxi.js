@@ -67,3 +67,4 @@ document.getElementById("price").innerHTML = null;
 // News Letter
 
 
+
