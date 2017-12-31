@@ -116,8 +116,14 @@ span:hover {
 	text-align: center;
 }
 
-input {
+input.form1 {
 	padding: 10px;
+	box-shadow: 1px 1px 1px #C7C7C7 inset;
+}
+
+input.form2 {
+	padding: 2px 2px 2px 8px;
+	border-radius: 12.5px;
 	box-shadow: 1px 1px 1px #C7C7C7 inset;
 }
 
@@ -125,7 +131,7 @@ input {
 	font-size: 18px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: normal;
-	padding: 1em 0 0 0;
+	padding: 0.5em 0 0 0;
 }
 
 .btn1 {
@@ -166,6 +172,7 @@ input {
 	color: #ffffff;
 	background: url("images/bgimg3.png");
 }
+
 
 /*******************************
  **********Features*************
@@ -217,16 +224,30 @@ h3.side-head {
 div.contact {
 	background: #ffffff;
 	padding: 2em 0 10px 4.5em;
-	width: 80%;
+	width: 100%;
+	display: inline-block;
+	flex-direction: row;
+	list-style-type: none;
 }
 
-h4.love {
+h4 {
 	font-size: 24px;
 	font-weight: bold;
 }
 
 .address p {
 	padding-bottom: 10px;
+}
+
+div.addressnow {
+	border-right: 1px;
+
+}
+
+input.form2 {
+	padding: 2px 2px 2px 8px;
+	border-radius: 12.5px;
+	box-shadow: 1px 1px 1px #C7C7C7 inset;
 }
 
 .social {

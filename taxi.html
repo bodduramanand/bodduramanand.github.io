@@ -50,21 +50,20 @@
 <div class="form">
     <div class="formfields">
      <br>
-     <input type="text" name="fromlocation" id="fromlocation" placeholder="from location" required id="resetnow">
+     <form id="disform">
+     <input type="text" name="fromlocation" id="fromlocation" placeholder="from location" class="form1">
      <br>
      <br>
-     <input type="text" name="tolocation" id="tolocation" placeholder="to location" required id="resetnow">
+     <input type="text" name="tolocation" id="tolocation" placeholder="to location" class="form1">
      <br>
      <br>
-     <input type="number" name="kms" id="kms" placeholder="approximate kms" required id="resetnow">
+     <input type="number" name="kms" id="kms" placeholder="approximate kms" class="form1">
      <br>
-     <p id="price" id="resetnow"></p>
-     <p id="noprice" id="resetnow"></p>
-     <br>
+     <p id="price"></p>
+     </form>
      <input type="submit" value="Submit" class="btn1" id="book" onclick="myBook()"> 
-     <input type="button" value="Reset" class="btn2" id="reset">
+     <input type="button" value="Reset" class="btn2" id="reset" onclick="resetForm()">
     </div>
-
 </div>
 
 <div class="featuremain" id="features">
@@ -96,24 +95,42 @@
 
 <div class="contact" id="contact">
 
-   <div class="mainhead4"><h4 class="love">We love to hear from you!</h4></div>
+  
+<ul>   
+    <li>
+      <div class="addressnow"> 
+        <div class="mainhead4">
+        <h4 class="love">
+        We love to hear from you!</h4></div>
 		<div class="connect">
-			<ul>
-			<li class="address">
-			<p>Yellow Cabs,<br/>
-            SEZ Towers,<br/>
-            Hi-Tech City,<br/>
-            Hyderabad-500081<br/>
-			</p>
-			</li>
+		<ul>
+		<p>Yellow Cabs,<br/>
+        SEZ Towers,<br/>
+        Hi-Tech City,<br/>
+        Hyderabad-500081<br/>
+		</p>
+	    </div>
+	   </div>
+	</li>    
+
+    <li>
+    	<div class="mainhead5">
+        <h4 class="newsltr">
+        Subscribe to our newsletter now!</h4></div>
+        <form>
+        	<input type="email" name="Email" placeholder="email" class="form2">
+        </form>
+    </li>
+</ul>
+</div>
+
+<ul> 
 			<li class="social"><p>Like, Follow and Subscribe</p>
 			<a href="#"><img src="images/social1.png" alt="my picture" height="30" width="30" /></a>
 			<a href="#"><img src="images/social2.png" alt="my picture" height="30" width="30" /></a>
 			<a href="#"><img src="images/social3.png" alt="my picture" height="30" width="30" /></a>
 			</li>
-			</ul>
-		</div>	
-	</div>
+</ul>
 	
 </div>
 
