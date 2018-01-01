@@ -66,3 +66,9 @@ document.getElementById("price").innerHTML = null;
 
 // News Letter
 
+function newsLetter() {
+    var eMail = document.getElementById('emailnow');
+    var newEmail = eMail.value;
+
+    document.getElementById("emailnow").innerHTML = "Subscribed";
+}
