@@ -226,8 +226,8 @@ div.contact {
 	padding: 2em 0 10px 4.5em;
 	width: 100%;
 	display: inline-block;
-	flex-direction: row;
 	list-style-type: none;
+	width: 75%;
 }
 
 h4 {
@@ -253,6 +253,15 @@ input.form2 {
 	margin-bottom: 18px;
 	transition: color 2s;
 	transition: background 0.8s;
+}
+
+div.addnews {
+	padding: 15px;
+	display: inline;
+	flex-direction: row;
+
+
+
 }
 
 .btn3:hover {
