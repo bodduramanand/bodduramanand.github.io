@@ -221,18 +221,30 @@ h3.side-head {
  ***Contact and Newsletter****
  ******************************/
 
-div.contact {
+div.addnews {
 	background: #ffffff;
 	padding: 2em 0 10px 4.5em;
 	width: 100%;
-	display: inline-block;
 	list-style-type: none;
-	width: 75%;
+
+}
+
+.add {
+	padding: 10px 0 10px 0;
+	width: 80%;
+}
+
+
+.addnewsnow {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 h4 {
 	font-size: 24px;
 	font-weight: bold;
+	padding-bottom: 5px;
 }
 
 input.form2 {
@@ -255,15 +267,6 @@ input.form2 {
 	transition: background 0.8s;
 }
 
-div.addnews {
-	padding: 15px;
-	display: inline;
-	flex-direction: row;
-
-
-
-}
-
 .btn3:hover {
 	color: #ffffff;
 	background: url("images/bgimg3.png");
@@ -273,23 +276,6 @@ div.addnews {
 	padding-bottom: 10px;
 }
 
-.social {
-	font-size: 16px;
-	font-weight: bold;
-	padding: 10px 0 15px 0;
-	border-top: 1px solid #000;
-}
-
-li.social img {
-	padding-top: 6px;
-	padding-right: 3px;
-	padding-bottom: 5px;
-	transition: transform 0.4s;
-}
-
-li.social img:hover {
-	transform: rotate(360deg);
-}
 
 /*******************************
  **********Footer*************
@@ -298,9 +284,28 @@ li.social img:hover {
  footer {
  	background: url("images/bgimg3.png");
  	color: #ffffff;
- 	padding: 5px 0 5px 0;
+ 	padding: 10px 0 10px 0;
  	text-align: center;
  }
+
+ .social {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 2px 0 2px 0;
+	width: 100%;
+	text-align: center;
+}
+
+li.social img {
+	padding-top: 6px;
+	padding-right: 15px;
+	padding-bottom: 4px;
+	transition: transform 0.4s;
+}
+
+li.social img:hover {
+	transform: rotate(16deg);
+}
 
  /*******************************
  ********************************
