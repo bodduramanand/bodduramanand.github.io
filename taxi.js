@@ -70,5 +70,9 @@ function newsLetter() {
     var eMail = document.getElementById('emailnow');
     var newEmail = eMail.value;
 
-    document.getElementById("emailnow").innerHTML = "Subscribed";
+    if (newEmail == null) {
+        window.alert("Plese enter your email.");
+    } else {
+        window.alert("Subscribed.");
+    }
 }
