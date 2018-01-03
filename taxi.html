@@ -8,10 +8,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 	<link rel="shortcut icon" href="images/favicon.ico"/>
 	<script type="text/javascript" src="taxi.js"></script>
+	<script type="text/javascript" src="map.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCknIa8FfRYjUm_TSKI3TCz3y8xuCkLubM&callback=myMap"></script>
 	</head>
 
 <body>
@@ -57,14 +60,20 @@
      <input type="text" name="tolocation" id="tolocation" placeholder="to location" class="form1">
      <br>
      <br>
-     <input type="number" name="kms" id="kms" placeholder="approximate kms" class="form1">
+    
      <br>
      <p id="price"></p>
+     <div id="output">
+     	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6VFnLwGJZw3pSV8TBGF9BYxnB0eW9uGQ&callback=initMap"></script>
+     </div>
      </form>
-     <input type="submit" value="Submit" class="btn1" id="book" onclick="myBook()"> 
+    <input type="submit" value="Submit" class="btn1" id="book" onclick="initMap()"> 
      <input type="button" value="Reset" class="btn2" id="reset" onclick="resetForm()">
     </div>
+
 </div>
+
+     
 
 <div class="featuremain" id="features">
 		
